@@ -1,0 +1,12 @@
+<!--launch/-->
+
+<launch>
+  
+  <node pkg="calibrate_laser" type="calibrate_laser_node" name="calibrate_laser_node" output="screen">
+      <param name="image_src" value="/output/image"/>
+      <param name="laser_points_src" value="/ns2/velodyne_points"/>
+      <param name="calibration_file" value="/home/yw/20191206_111233_autoware_lidar_camera_calibration.yaml"/>
+      <param name="calibrate_points_topic" value="/clicked_point"/>
+  </node>
+
+</launch>
